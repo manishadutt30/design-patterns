@@ -12,9 +12,9 @@ public abstract class Duck {
 
     public abstract void display();
 
-//    public void fly(){
-//        System.out.println("Duck is flying");
-//    }
+    public void fly(){
+        System.out.println("Duck is flying");
+    }
 
     //public abstract void fly();
 }

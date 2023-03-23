@@ -1,6 +1,6 @@
 package DuckExample.Second;
 
-public class MallardDuck extends Duck{
+public class MallardDuck extends Duck implements FlyInterface{
     @Override
     public void fly() {
         System.out.println("Mallard Duck is flying");

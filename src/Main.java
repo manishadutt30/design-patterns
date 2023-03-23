@@ -106,50 +106,19 @@ public class Main {
         return size;
     }
     public static void main(String[] args) {
-       ArrayList<Integer> A = new ArrayList<>();
-       A.add(1);
-       A.add(2);
-       A.add(3);
-       A.add(7);
-       A.add(1);
-       A.add(2);
-       A.add(3);
-
-        ArrayList<Integer> even = new ArrayList<Integer>();
-        ArrayList<Integer> odd = new ArrayList<Integer>();
-        even.add(A.get(0));
-        odd.add(0);
-
-        for(int i=1; i<A.size(); i++){
-            if(i%2 == 0){
-                even.add(even.get(i-1)+A.get(i));
-            }else{
-                even.add(even.get(i-1));
-            }
+        long l=2;
+        long r=8;
+        long result = 0;
+        for(long i=0; i<l; i++){
+            result = result^i;
+        }
+        long check = l+r;
+       while(l<=r){
+            result = result^(result^l);
+            l++;
         }
 
-        for(int i=1; i<A.size(); i++){
-            if(i%2 == 1){
-                odd.add(odd.get(i-1)+A.get(i));
-            }else{
-                odd.add(odd.get(i-1));
-            }
-        }
+       System.out.println(result);
 
-        int count=0;
-        if(even.get(A.size()-1) - even.get(0) == odd.get(A.size()-1) - odd.get(0)){
-            count++;
-        }
-
-        for(int i=1; i<A.size(); i++){
-            int oddValue = odd.get(i-1) + even.get(A.size()-1) - even.get(i);
-            int evenValue = even.get(i-1) + odd.get(A.size() -1) - odd.get(i);
-
-            if(oddValue == evenValue){
-                count++;
-            }
-        }
-
-        System.out.println(count);
     }
 }

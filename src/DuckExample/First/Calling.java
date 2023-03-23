@@ -8,18 +8,18 @@ public class Calling {
         mallardDuck.quack();
         mallardDuck.swim();
         mallardDuck.display();
-        //mallardDuck.fly();
+        mallardDuck.fly();
 
         Duck redheadDuck = new RedheadDuck();
         redheadDuck.quack();
         redheadDuck.swim();
         redheadDuck.display();
-        //redheadDuck.fly();
+        redheadDuck.fly();
 
         Duck rubberDuck = new RubberDuck();
         rubberDuck.quack();
         rubberDuck.swim();
         rubberDuck.display();
-        //rubberDuck.fly();
+        rubberDuck.fly();
     }
 }

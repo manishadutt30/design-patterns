@@ -3,7 +3,7 @@ package DuckExample.Third;
 public class DecoyDuck extends Duck{
 
     public DecoyDuck(){
-        setFlyInterface(new FlyNoWay());
+        setFlyInterface(new ABC());
         setQuackInterface(new MuteQuack());
     }
 
